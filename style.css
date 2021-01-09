@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+p{
+    color: #495464;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #f4f4f2;
+}
+#navigationBurger{
+   display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+#burgerBack{
+    background: #495464;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.1s;
+    
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#burgerBack:hover{
+    cursor: pointer;
+    transform: scale(1.2)
+}
+#barContainer{
+    padding-top: 7px;
+}
+.burgerBar1, .burgerBar2, .burgerBar3{
+    height: 5px;
+    width: 30px;
+    background: white;
+    margin-top: 5px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+.move .burgerBar1{
+     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-7px, 6px);
+}
+.move .burgerBar2 {
+    opacity: 0;
+}
+.move .burgerBar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+#navigation{
+    width: 300px;
+    height: 100vh;
+    transition: 0.4s;
+    position: fixed;
+    top: 0px;
+    left: -200px;
+    z-index: 3;
+}
+.curtain{
+    transform: translateX(65%);
+    background: #495464;
+}
+#navigationList{
+    list-style: outside;
+    margin-left: 20%;
+    margin-top: 20%;
+    color: white;
+}
+.navListItem{
+    margin-bottom: 20px;
+    width: 50%;
+}
+.navListItem:hover{
+    cursor: pointer;
+}
+#projectsSubList{
+    margin-bottom: 20px;
+    list-style: outside;
+}
+.projectsSub{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.projectsSub:hover{
+    cursor: pointer;
+}
+
+
+
+#greetingSection{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#greetingImage{
+    width: 30%;
+    height: 50vh;
+}
+#greetingText{
+    width: 60%;
+}
+#greetingTextBig{
+    width: 100%;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    min-height: 80px;
+}
+#greetingTextSmall{
+    width: 75%;
+    font-size: 1.5em;
+}
+
+
+#aboutSection{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#aboutMain{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#aboutTitle{
+    align-self: flex-start;
+    margin-left: 27%;
+    border-bottom: 2px solid red;
+    padding-left: 15px;
+    width: 3.2em;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+#aboutTextSmall{
+    margin-top: 10px;
+}
+#techStack{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+#techStackHeading{
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#techLists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.techList{
+    margin-left: 13px;
+    justify-self: flex-end;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+.listHeadingSmall{
+    height: 3em;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.techListDiv{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    background-color: #e8e8e8;
+    box-shadow:  5px 5px 9px #848484, 
+             -5px -5px 9px #ffffff;
+}
+.techIcon{
+    width: 20px;
+    height: 20px;
+}
+.listItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10em;
+    margin-top: 10px;
+}
+.listItem>p{
+    margin-left: 5px;
+}
+#aboutTextSmall2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#certificatesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.certificates{
+    height: 150px;
+    width: 250px;
+    margin-top: 20px;
+    box-shadow: none;
+}
+.certificates:hover{
+    cursor: pointer;
+}
+
+#projectsSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+#projectsSectionTitle{
+    align-self: flex-start;
+    margin-left: 27%;
+    border-bottom: 2px solid red;
+    padding-left: 15px;
+    width: 4.6em;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.project{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    height: 290px;
+    
+}
+.projectDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+#img2{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+#img3{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+#txt2{
+    width: 60%;
+    height: 40%;
+    margin-top: 70px;
+}
+#txt3{
+    width: 50%;
+    height: 40%;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.projectLeftContainer{
+    width: 60%;
+    position: relative;
+}
+.projectImage{
+    height: 20em;
+    width: 20em;
+    border: 1px solid #e8e8e8;
+}
+.projectText{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.projectTitle{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.projectSubTitle{
+    margin-bottom: 20px;
+}
+.linkDiv{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.linkIcon{
+    margin-right: 5px;
+}
+.projectTextSmall{
+    font-size: 12px;
+    margin-top: 2px;
+    
+}
+.projcetLink{
+    margin-right: 20px;
+}
+.expandButtonDiv{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    width: 60%;
+    align-self: flex-end;
+}
+.expandButton{
+    background: red;
+    height: 24px;
+    width: 120px;
+    z-index: 2;
+    margin-right: 3.9em;
+}
+.expandButton:hover{
+    cursor: pointer;
+}
+.expandBtnBgDiv{
+    background: white;
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    z-index: 1;
+    background-color: #f4f4f2;
+}
+.openProject{
+    height: auto;
+    overflow: visible;
+}
+.buttonOpen{
+    position: relative;
+    margin-top: 10px;
+    opacity: 100%;
+    filter: blur(1);
+    align-self: center;
+}
+.siteIllustrations{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#contactsSection{
+    min-height: 80vh;
+    height: auto;
+    width: 100%    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactsTitle{
+    margin-bottom: 100px;
+    border-bottom: 2px solid red;
+    font-size: 40px;
+}
+.formElement{
+    width: 25em;
+    height: 2em;
+    margin-bottom: 10px;
+    padding-left: 7px;
+}
+#messageBig{
+    height: 10em;
+    resize: none;
+    overflow: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formSubmitButton{
+    width: 6em;
+    height: 2.3em;
+}
+#formSubmitButton:hover{
+    cursor: pointer;
+}
+#mainPic{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    #certificatesContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #techLists{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .techList{
+        margin-left: 0;
+    }
+    .techListDiv{
+        width: 70%;
+        margin-top: 15px;
+    }
+    form{
+        width: 80%
+    }
+    .formElement{
+        width: 100%;
+    }
+    .listItem{
+        margin-left: 3px;
+    }
+    #greetingSection{
+        flex-direction: column;
+    }
+    #greetingImage{
+        width: 250px;
+        height: 250px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    #greetingTextSmall{
+        width: auto;
+    }
+    .projectImage{
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+        margin-top: 45px;
+    }
+    #img3{
+        margin-left: 0px;
+        margin-top: 32px;
+    }
+    #img2{
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Igor Kuprijanov</title>
+    <link rel='stylesheet' href="style.css">
+    <link rel="icon" href='images/tabicon.svg'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_TdpHnIUXvSLfiVmJREhtz");
+        })();
+</script>
+</head>
+<body>
+   <div id='navigation'>
+    <div id='navigationBurger'>
+        <div id='burgerBack' onClick='navigationOperation(this)'>
+           <div id='barContainer'>
+            <div class="burgerBar1"></div>
+            <div class="burgerBar2"></div>
+            <div class="burgerBar3"></div>
+            </div>
+        </div>
+    </div>
+    <ul id=navigationList>
+        <li ><h1 class='navListItem' onClick='navigate()'>Top</h1></li>
+        <li><h1 class='navListItem' onClick='navigate()'>About me</h1></li>
+        <li><h1 class='navListItem' onClick='navigate()'>Projects</h1></li>
+        <ul id="projectsSubList">
+            <li><h2 class="projectsSub" onClick='navigate()'>Restourant</h2></li>
+            <li><h2 class="projectsSub"  onClick='navigate()'>Webshop</h2></li>
+            <li><h2 class="projectsSub"  onClick='navigate()'>Solitare</h2></li>
+            <li><h2 class="projectsSub"  onClick='navigate()'>Landscaping</h2></li>
+        </ul>
+        <li><h1 class='navListItem' onClick='navigate()'>Contacts</h1></li>
+    </ul>
+    </div>
+    <div id='main'>
+         <div id="greetingSection">
+            <div id="greetingImage">
+                <img src='images/image8.JPG' id='mainPic'>
+            </div>
+            <div id='greetingText'>
+                <h1 id="greetingTextBig"></h1>
+                <p id="greetingTextSmall" class="animate__animated animate__fadeIn animate__delay-3s">I am a self-thought web developer, menaning I have been learning web development by myself out of passion and enthusiasm. I enjoy writing code and solving problems and want to keep learning new technologies. My main tools are ReactJS and JavaScript, as well as HTML and CSS.</p>
+            </div>
+        </div>
+        <div id="str"></div>
+        
+        
+        <div id='aboutSection'>
+          <h1 id='aboutTitle'>About</h1>
+           <div id='aboutMain'>
+            <div>
+            <h2>Get to know me better.</h2>
+            <p id="aboutTextSmall">I am 23 years old and live in Rotterdam, the Netherlands. As the web development and the web itself is rapidly evolving, I think that the ability to learn new technologies and adapt is crutial. Thus I believe that the skill of learning new things by oneself is very important. In my opinion the web should be used by everyone and everywhere, thats why I think that in modern web development accesability and responsivenes of web applications is one of the most important aspects.</p>
+            <p id="aboutTextSmall2">As I have been learning to code the web on the web I have also abtained a couple of certificates from a well known e-learning recourse <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, which can be viewed here:</p>
+            <div id="certificatesContainer">
+               <div class="imageContainer">
+                <img class='certificates' alt="front end libraies certificate" src="images/cerificate1.png" id='certificate1'>
+                </div>
+                <div class="imageContainer">
+                 <img class='certificates' alt="javascript algorithms and data structures ceritficate" src="images/cerificate2.png" id='certificate2'>
+                 </div>
+                 <div class="imageContainer">
+                 <img class='certificates' alt="responsive web design certificate" src="images/cerificate3.png" id='certificate3'>
+                 </div>
+            </div>
+            </div>
+            <div id='techStack'>
+              <div id="techStackHeading">
+               <h2>Some of the technologies I use:</h2>
+               </div>
+               <div id='techLists'>
+                <div class='techListDiv'>
+                    <h3 class='listHeadingSmall'>Programming Languages</h3>
+                    <ul class="techList">
+                        <li class="listItem"><img src='images/html5logo.jpg' class="techIcon"> <p>HTML5</p></li>
+                        <li class="listItem"><img src='images/csslogo.png' class="techIcon"> <p>CSS</p></li>
+                        <li class="listItem"><img src='images/jslogo.jpg' class="techIcon"> <p>JavaScript</p></li>
+                    </ul>
+                </div>
+                <div  class='techListDiv'>
+                    <h3  class='listHeadingSmall'>HTML and CSS Libraries</h3>
+                    <ul class="techList">
+                        <li class="listItem"><img src='images/bootstraplogo.png' class="techIcon"> <p>Bootstrap</p></li>
+                        <li class="listItem"><img src='images/skeletoncss.png' class="techIcon"> <p>Bootstrap</p></li>
+                        <li class="listItem"><img src='images/animatecsslogo.svg' class="techIcon"> <p>Animate.css</p></li>
+                        <li class="listItem"><img src='images/matcss.png' class="techIcon"> <p>Materialize</p></li>
+                        
+                    </ul>
+                </div>
+                <div  class='techListDiv'>
+                    <h3  class='listHeadingSmall'>JavaScript Frameworks & Libraries</h3>
+                    <ul class="techList">
+                        <li class="listItem"><img src='images/reactjslogo.png' class="techIcon"> <p>ReactJS</p></li>
+                        <li class="listItem"><img src='images/threejs.logo.png' class="techIcon"> <p>Three.js and React Three Fiber</p></li>
+                        <li class="listItem"><img src='images/reactrouterlogo.png' class="techIcon"> <p>React Router</p></li>
+                        <li class="listItem"><img src='images/dreijslogo.PNG' class="techIcon"> <p>Drei</p></li>
+                        <li class="listItem"><img src='images/animejs.logo.png' class="techIcon"> <p>Anime.js</p></li>
+                        <li class="listItem"><img src='images/materialui.png' class="techIcon"> <p>Material UI</p></li>
+                        <li class="listItem"><img src='images/reduxlogo.png' class="techIcon"> <p>Redux</p></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        
+        
+        <div id="projectsSection">
+          <h1 id='projectsSectionTitle'>Projects</h1>
+          
+           <div class="project" id="project1">
+             <div class="projectDiv">
+              <div class="projectImage">
+                  <img class="siteIllustrations" src="images/restopic1.png">
+              </div>
+              <div class="projectLeftContainer">
+              <div class='projectText'>
+                  <h2 class='projectTitle'>Delicatesso Restorante</h2>
+                  <h3 class='projectSubTitle'>Restournt landing page.</h3>
+                  <div class='linkDiv'>
+                  <a class="projcetLink" target="_blank"  href="https://musing-aryabhata-7cf8c4.netlify.app/"><i class="linkIcon far fa-window-maximize" style="color: red;"></i>Link to the website</a>
+                  <a class="projcetLink" target="_blank" href="https://github.com/igorkuprijanov/restolandingpage"><i class="linkIcon fab fa-github" style="color: red;"></i>Link to source</a>
+                  </div>
+                  <p class='projectTextSmall'>A landing page for an italian restourant written in pure JavaScript and using Animate.css for the animations. Effectively a single-page website where different page sections are brought up in form of menu cards through use of Animate.css 'slide-up'-style animations.</p> 
+              </div>
+               </div>
+               </div>
+               <div class="projectDiv">
+                   <p id="txt2" class='projectTextSmall'>The page has a 'book a table' popup function where a disired table and time of booking can be selected, also animated with Animate.css. The website is fully responsive and usable on moblie devices. </p>
+                   <div id="img2" class="projectImage">
+                       <img class="siteIllustrations" src="images/restopic2.png">
+                   </div>
+               </div>
+               <div class="projectDiv">
+                  <div id="img3" class="projectImage">
+                      <img class="siteIllustrations" src="images/restopic3.png">
+                  </div>
+                   <p id="txt3" class='projectTextSmall'>The website does not use an external API, rather all data is kept in the main html file. This approach has been chosen due to the fact that restourants rearly change their menus, contacts or locations so there is no need for frequent data updates, yet if they are needed, the main file can be easily modified.</p>
+               </div>
+            <div class="expandButtonDiv">
+                  <div class='expandBtnBgDiv' ></div>
+                  <button class="expandButton" id='projectButton1' onClick='expandText(this)'>Read more</button>
+            </div>
+           </div> 
+           
+           <div class="project" id="project2">
+             <div class="projectDiv">
+              <div class="projectImage">
+                  <img class="siteIllustrations" src="images/webshoppic1.png">
+              </div>
+              <div class="projectLeftContainer">
+              <div class='projectText'>
+                  <h2 class='projectTitle'>Novum Tabernam</h2>
+                  <h3 class='projectSubTitle'>Cosmetics company web store.</h3>
+                  <div class='linkDiv'>
+                  <a class="projcetLink" target="_blank" href="https://peaceful-wiles-bb8787.netlify.app/"><i class="linkIcon far fa-window-maximize" style="color: red;"></i>Link to the website</a>
+                  <a class="projcetLink" target="_blank" href="https://github.com/igorkuprijanov/nova"><i class="linkIcon fab fa-github" style="color: red;"></i>Link to source</a>
+                  </div>
+                  <p class='projectTextSmall'>This website is a web store for a cosmetics company. Written using React and its JSX syntax extention. As a single page website it uses React Router to navigate through different sections of the store. To display the items in 3D space I used Three.js's React version React Three Fiber.</p> 
+              </div>
+               </div>
+               </div>
+               <div class="projectDiv">
+                   <p id="txt2" class='projectTextSmall'>The website has few categories where the products are displayed, a dynamicly updated shoping cart which also takes the user to the checkout page, and a 'liked' section where favorite products can be bookmarked. For the data there is a simulation of an API, it is just a simple array of objects that is located outside of the main files and can be easily updated and changed without modifying the actual store files.</p>
+                   <div id="img2" class="projectImage">
+                        <img class="siteIllustrations" src="images/webshoppic2.png">
+                   </div>
+               </div>
+               <div class="projectDiv">
+                  <div id="img3" class="projectImage">
+                       <img class="siteIllustrations" src="images/webshoppic3.png">
+                  </div>
+                   <p id="txt3" class='projectTextSmall'>The models are not of the best quality, but they do however serve their purpose, to display a 3D interactable object of the product.</p>
+               </div>
+            <div class="expandButtonDiv">
+                  <div class='expandBtnBgDiv' ></div>
+                  <button class="expandButton" id='projectButton2' onClick='expandText(this)'>Read more</button>
+            </div>
+           </div> 
+           
+           <div class="project" id="project3">
+             <div class="projectDiv">
+              <div class="projectImage">
+                   <img class="siteIllustrations" src="images/solitairepic1.png">
+              </div>
+              <div class="projectLeftContainer">
+              <div class='projectText'>
+                  <h2 class='projectTitle'>Spider Solitare Express</h2>
+                  <h3 class='projectSubTitle'>Spider solitare card game.</h3>
+                  <div class='linkDiv'>
+                  <a class="projcetLink" target="_blank"  href="https://blissful-tereshkova-7f1062.netlify.app/"><i class="linkIcon far fa-window-maximize" style="color: red;"></i>Link to the website</a>
+                  <a class="projcetLink" target="_blank" href="https://github.com/igorkuprijanov/solitaire"><i class="linkIcon fab fa-github" style="color: red;"></i>Link to source</a>
+                  </div>
+                  <p class='projectTextSmall'>A classic spider solitare game, that one can play by oneself. Made with pure JavaScript. The game is played with two decks of cards and goes on until all eight foundation piles are filled. Not every game is winnable, that is just the nature of the game, due to cards beeing distributed randomly. The website also has a set of rules and explanation of how to play the game.</p> 
+              </div>
+               </div>
+               </div>
+               <div class="projectDiv">
+                   <p id="txt2" class='projectTextSmall'>The game uses Deck of Cards API to draw card objects with their provided images. For moving the cards I used HTMLs Drag and Drop API, which turned out not as good as it was planned. The API is not supported on mobile devices, thus the game is unplayable on mobile or touch screen devices.</p>
+                   <div id="img2" class="projectImage">
+                       <img class="siteIllustrations" src="images/solitairepic2.png">
+                   </div>
+               </div>
+               <div class="projectDiv">
+                  <div id="img3" class="projectImage">
+                     <img class="siteIllustrations" src="images/solitairepic3.png">
+                  </div>
+                   <p id="txt3" class='projectTextSmall'>Every stack of cards is an array of objects of these cards. During the game arrays are modified depending on the actions of the player. The foundation piles are a part of an boolean array, when all items of the array are set to the value of true, the game is won and the endgame message is displayed.</p>
+               </div>
+            <div class="expandButtonDiv">
+                  <div class='expandBtnBgDiv' ></div>
+                  <button class="expandButton" id='projectButton3' onClick='expandText(this)'>Read more</button>
+            </div>
+           </div> 
+           
+           <div class="project" id="project4">
+             <div class="projectDiv">
+              <div class="projectImage">
+                  <img class="siteIllustrations" src="images/landscapingpic1.png">
+              </div>
+              <div class="projectLeftContainer">
+              <div class='projectText'>
+                  <h2 class='projectTitle'>Spencer Landscaping</h2>
+                  <h3 class='projectSubTitle'>Landscaping company landing page.</h3>
+                  <div class='linkDiv'>
+                  <a class="projcetLink" target="_blank"  href="https://mystifying-ptolemy-07674a.netlify.app/"><i class="linkIcon far fa-window-maximize" style="color: red;"></i>Link to the website</a>
+                  <a class="projcetLink" target="_blank" href="https://github.com/igorkuprijanov/spancerlandscape"><i class="linkIcon fab fa-github" style="color: red;"></i>Link to source</a>
+                  </div>
+                  <p class='projectTextSmall'>A landing page for a landscaping company written using React. It is a simple single page application, with description of the company and its services and a calculator to calculate estimaed prices of the expected works.</p> 
+              </div>
+               </div>
+               </div>
+               <div class="projectDiv">
+                   <p id="txt2" class='projectTextSmall'>Application uses React framework and its JSX syntax extention. Website has a filterable gallery with the display of previous works that are drawn from a local database. </p>
+                   <div id="img2" class="projectImage">
+                       <img class="siteIllustrations" src="images/landscapingpic2.png">
+                   </div>
+               </div>
+               <div class="projectDiv">
+                  <div id="img3" class="projectImage">
+                      <img class="siteIllustrations" src="images/landscapingpic3.png">
+                  </div>
+                   <p id="txt3" class='projectTextSmall'>The estimated price calculator takes in many variables and dynamicly calculates the expected price.</p>
+               </div>
+            <div class="expandButtonDiv">
+                  <div class='expandBtnBgDiv' ></div>
+                  <button class="expandButton" id='projectButton4' onClick='expandText(this)'>Read more</button>
+            </div>
+           </div> 
+         
+        </div>
+        
+        
+        <div id="contactsSection">
+            <h1 id='contactsTitle'>Send me a message!</h1>
+            <form id="contact-form" onsubmit="formSubmit()">
+              <input type="hidden" name="contact_number">
+               <input class="formElement" placeholder="Name" type="text" name="user_name">
+               <input class="formElement" placeholder="Company" name="company_name" type="text">
+               <input class="formElement" placeholder="E-mail" type="email" name="user_email">
+               <textarea name="message" id="messageBig" class="formElement" placeholder="Message" type="text"></textarea>
+                <input id="formSubmitButton" value="Submit" type="submit">
+               
+            </form> 
+        </div>
+    </div>
+<script src="https://kit.fontawesome.com/1468063927.js" crossorigin="anonymous"></script>
+<script src='app.js'></script>
+</body>
+</html>
