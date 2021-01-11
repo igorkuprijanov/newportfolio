@@ -325,14 +325,19 @@ html{
     align-self: flex-end;
 }
 .expandButton{
-    background: red;
+    background: #f0c0b5;
     height: 24px;
     width: 120px;
     z-index: 2;
     margin-right: 3.9em;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.2s;
 }
 .expandButton:hover{
     cursor: pointer;
+    background: #e48e7b;
 }
 .expandBtnBgDiv{
     background: white;
