@@ -458,3 +458,18 @@ form{
         margin-left: 10px;
     }
 }
+@media only screen and (max-width: 376px){
+    #contactsTitle{
+        width: 80%;
+    }
+    #projectsSectionTitle{
+        margin-left: 1em;
+    }
+    #aboutTitle{
+        margin-left: 1em;
+    }     
+    .linkDiv{
+        display: flex;
+        flex-direction: row;
+    }
+}
